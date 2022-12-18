@@ -12,13 +12,13 @@ app.use(cors());
 app.use(json());
 app.use(cors());
 
-app.get('/', (req, res) => {
-  res
-    .type('text/plain')
-    .send(
-      'Server OK, use "https://users-rest-node.herokuapp.com/users" to redirect users'
-    );
-});
+// app.get('/', (req, res) => {
+//   res
+//     .type('text/plain')
+//     .send(
+//       'Server OK, use "https://users-rest-node.herokuapp.com/users" to redirect users'
+//     );
+// });
 
 app.use('/users', routerUsers);
 
