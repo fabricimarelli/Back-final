@@ -1,47 +1,44 @@
 # API Rest - Users
 
-## What is about?
+## Sobre que trata?
 
-This project consists of a simple "Rest API" to manage users, with the basic options of "get, post, put and delete"
+El proyecto consiste en una simple "Rest API" para gestionar usuarios, con los verbos http "get, post, put y delete"
 
-## Technology stack
+## Tecnologia utilizada
 
 -Node.js
 -Express
 -Mongoose
 
-## How to run this proyect?
+## Como ejecutar el proyecto
 
-1. Clone the project
+1. Clonar el proyecto:
 ```sh
 git clone https://github.com/matiasvirgili/Users-Rest-Node
 ```
 
-2. Open folder and create and config your environment variables in a `.env` file, you can use the `.env.example` as a guid
-3. Install packages and run the project
+2. Abir la carpeta, crear y confiugrar las variables de entorno en `.env`, podes ver el ejemplo de `.env.example` como guia.
+3. Instalar los packages y correr el proyecto
 ```sh
 npm install
 npm start
 ```
-4. Open the url of the localhost with your assigned port in ".env". Ex: localhost:9999
+4. Abrir la url del localhost con el puerto asignado en " .env". Ej: localhost:9999
 
-## Deployed on Heroku
-You can test this app at
-[Heroku_Ivan](https://users-rest-node.herokuapp.com/)
- OR 
-[Heroku_Matias](https://users-node-rest.herokuapp.com)
+## Desarrollo en Vercel
 
-## API Specification
+
+## Especificaciones API 
 ### Get users
 `GET /users/`
 
-You can use this query:
+Podes usar esta consulta:
 ```sh
-/users?name=(name you want to search in users)
-/users?lastName=(last name you want to search in users)
-/users?telephone=(telephone you want to search in users)
-/users?direction=(direction you want to search in users)
-/users?dni=(DNI you want to search)
+/users?name=(nnombre a buscar en users)
+/users?lastName=(apellido a buscar en users)
+/users?telephone=(telefono a buscar en users)
+/users?direction=(direccion a buscar en users)
+/users?dni=(DNI a buscar)
 ```
 
 ### Get user by id
@@ -49,7 +46,7 @@ You can use this query:
 
 ex: /users/615dfd72a5b90ed6106bb2cb
 
-### Add or modify user 
+### Add o modify user 
 
 Add:
 ```sh
@@ -60,15 +57,15 @@ Modify
 PUT /users/:usersId
 ```
 
-To add or modify users you need the following fields:
+Para agregar o modificar usuarios son necesarios los siguientes campos:
 
 ```
 {
-    "name": "Ivan",
-    "lastName": "Sangermano",
+    "name": "Fabrizio",
+    "lastName": "Cimarelli",
     "telephone": "22222222",
-    "direction": "Acapulco 4444",
-    "dni" : "44444444"
+    "direction": "Balcarce 5454",
+    "dni" : "42588888"
 }
 ```
 ### Delete user
