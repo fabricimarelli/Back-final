@@ -14,7 +14,7 @@ El proyecto consiste en una simple "Rest API" para gestionar usuarios, con los v
 
 1. Clonar el proyecto:
 ```sh
-git clone https://github.com/matiasvirgili/Users-Rest-Node
+git clone https://github.com/fabricimarelli/Back-final.git
 ```
 
 2. Abir la carpeta, crear y confiugrar las variables de entorno en `.env`, podes ver el ejemplo de `.env.example` como guia.
